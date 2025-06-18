@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio de Sesión - LMTV Films</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="media/fondo.mp4" type="video/mp4">
+    Tu navegador no soporta el video.
+  </video>
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="user" placeholder="Usuario" oninput="validateLogin()" />
+    <input type="password" id="pass" placeholder="Contraseña" oninput="validateLogin()" />
+    <button id="loginBtn" onclick="login()" disabled>Ingresar</button>
+    <button onclick="window.location.href='registro.html'">Registrarse</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

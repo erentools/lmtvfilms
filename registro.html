@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - LMTV Films</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="background-image">
+  <div class="form-container">
+    <h2>Registro</h2>
+    <input type="text" id="nombre" placeholder="Nombre Completo" oninput="validateRegister()" />
+    <input type="email" id="correo" placeholder="Correo Electrónico" oninput="validateRegister()" />
+    <input type="text" id="nuevoUsuario" placeholder="Nuevo Usuario" oninput="validateRegister()" />
+    <input type="password" id="newPass" placeholder="Contraseña" oninput="validateRegister()" />
+    <input type="password" id="confirmPass" placeholder="Verificar Contraseña" oninput="validateRegister()" />
+    <button id="registerBtn" onclick="goToSending()" disabled>Registrar Datos</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
